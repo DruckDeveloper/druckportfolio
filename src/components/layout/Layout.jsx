@@ -1,8 +1,16 @@
 import React from 'react'
+import WebRoutes from '../../routes/WebRoutes'
+import Header from '../Header/Header'
 
-function Layout() {
+const Layout = () => {
   return (
-    <div>Layout</div>
+    <>
+      <Header />
+      
+    <main>
+      <WebRoutes />
+    </main>
+  </>
   )
 }
 
