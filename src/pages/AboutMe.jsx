@@ -1,8 +1,11 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 
 const AboutMe = () => {
   return (
-    <div>AboutMe</div>
+    <div>
+        hola mundo
+    </div>
   )
 }
 

@@ -6,15 +6,30 @@ import spanishContent from '../data/lang/es-CO.json';
 
 const LangContextProvider = ({ children }) => {
     const [langContent, setLangContent] = useState(englishContent); 
-    
+    const [locale, setLocale] = useState('en-US')
+
     const changeLanguague = (languague) => {
-        console.log("El idioma seleccionado es", languague)
+        switch(languague){
+            case "en-US": 
+                setLangContent(englishContent); 
+                setLocale("en-US"); 
+                break; 
+            case "es-CO":
+                setLangContent(spanishContent);  
+                setLocale("es-CO"); 
+                break; 
+            default: 
+                setLangContent(englishContent); 
+                setLocale("en-US"); 
+        }
     }
 
     const langContextValues = {
         langContent, 
         setLangContent, 
-        changeLanguague
+        changeLanguague, 
+        locale,
+        setLocale
     }
 
     return (
