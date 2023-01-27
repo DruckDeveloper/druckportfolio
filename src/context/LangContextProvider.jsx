@@ -1,7 +1,9 @@
 import LangContext from "./LangContext";
+import { IntlProvider } from "react-intl"; 
 import { useState } from "react";
 import englishContent from '../data/lang/en-US.json';  
 import spanishContent from '../data/lang/es-CO.json'; 
+
 
 
 const LangContextProvider = ({ children }) => {
@@ -34,7 +36,9 @@ const LangContextProvider = ({ children }) => {
 
     return (
         <LangContext.Provider value={langContextValues}>
-            { children }
+            <IntlProvider locale={locale} messages={langContent}>
+                { children }
+            </IntlProvider>
         </LangContext.Provider>
   )
 }
