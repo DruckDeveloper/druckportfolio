@@ -10,18 +10,21 @@ const LangContextProvider = ({ children }) => {
     const [langContent, setLangContent] = useState(englishContent); 
     const [locale, setLocale] = useState('en-US')
 
-    const changeLanguague = (languague) => {
-        switch(languague){
+    const changeLanguage = (language) => {
+        switch(language){
             case "en-US": 
                 setLangContent(englishContent); 
                 setLocale("en-US"); 
+                localStorage.setItem('lang', 'en-US');
                 break; 
             case "es-CO":
                 setLangContent(spanishContent);  
                 setLocale("es-CO"); 
+                localStorage.setItem('lang', 'es-CO');
                 break; 
             default: 
-                setLangContent(englishContent); 
+                setLangContent(englishContent);
+                localStorage.setItem('lang', 'en-US');
                 setLocale("en-US"); 
         }
     }
@@ -29,7 +32,7 @@ const LangContextProvider = ({ children }) => {
     const langContextValues = {
         langContent, 
         setLangContent, 
-        changeLanguague, 
+        changeLanguage, 
         locale,
         setLocale
     }

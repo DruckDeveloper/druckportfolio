@@ -1,1 +1,14 @@
-@use './components/layout/Layout'; 
+//import styles reset 
+@use './styles/reset'; 
+//Import styles functions
+@use './styles/mixins'; 
+
+
+
+/*==================
+COMPONENTS STYLES 
+==================*/
+
+@use './components/layout/Layout';
+@use './components/header/Header'; 
+@use './components/navbar/Navbar'; 

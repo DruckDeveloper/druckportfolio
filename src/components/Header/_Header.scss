@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles/mixins'; 
+
+.web__header{
+    @include flex-center-x(column);
+    background-color: $dark-bg-header;
+    gap: 20px;
+    
+    & .language__selector{
+        width: 40%;
+        font-size: 15px;
+        color: #ffffff;
+        background-color: $dark-bg-header
+    }
+
+    &__nav{
+        @include flex-center-xy(column, center, center);
+        gap: 10px;
+        height: 60%;
+
+        &--item{
+            width: 60%;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 20px;
+            padding: 5px ;
+            color: #ffffff;
+            background-color: $nav-button-bg;
+        }
+    }
+}
