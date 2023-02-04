@@ -9,6 +9,17 @@
 COMPONENTS STYLES 
 ==================*/
 
-@use './components/layout/Layout';
+@use './App'; 
 @use './components/header/Header'; 
 @use './components/navbar/Navbar'; 
+
+#root {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    min-height: 100vh;
+
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}

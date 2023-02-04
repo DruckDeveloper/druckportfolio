@@ -3,10 +3,17 @@
 
 .web__header{
     @include flex-center-x(space-evenly, column);
+    position: sticky;
+    top: 0;
+    height: 100vh;
     background-color: $dark-bg-header;
     gap: 20px;
     align-items: center;
     
+    @media (max-width: 768px) {
+        position: relative;
+    }
+
     & .language__selector{
         width: 40%;
         font-size: 15px;

@@ -3,9 +3,9 @@ import { FormattedMessage } from 'react-intl'
 
 const AboutMe = () => {
   return (
-    <div>
+    <section className='aboutme__section'>
         hola mundo
-    </div>
+    </section>
   )
 }
 
