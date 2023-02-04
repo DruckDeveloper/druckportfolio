@@ -2,9 +2,12 @@
     "header.profile-name": "Druck Developer", 
     "header.profile-rol-1": "Javascript Full stack developer",  
     "header.profile-rol-2": "AWS cloud practitioner",  
+    
     "header.nav.button-aboutme": "About me", 
     "header.nav.button-projects": "Projects", 
     "header.nav.button-skills": "Skills", 
     "header.nav.button-certifications": "Certifications",
     "header.nav.button-contactme": "Contact me" 
+
+
 }
