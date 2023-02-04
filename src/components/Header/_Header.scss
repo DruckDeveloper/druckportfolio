@@ -15,10 +15,12 @@
     }
 
     & .language__selector{
-        width: 40%;
+        width: 30%;
         font-size: 15px;
         color: #ffffff;
-        background-color: $dark-bg-header
+        background-color: $dark-bg-header;
+        border: none;      
+
     }
 
     & .profile {
@@ -46,25 +48,25 @@
 
     &__nav{
         @include flex-center-xy(column, center, center);
-        width: 60%;
-        gap: 10px;
+        width: 90%;
+        gap: 20px;
 
 
         &--item{
-            width: 100%;
+            width: 60%;
             text-align: center;
             text-decoration: none;
             border-radius: 20px;
             padding: 5px ;
             color: #ffffff;
             background-color: $nav-button-bg;
-            transition: 0.3s;
+            transition: 0.4s;
         }
         &--item:hover{
             background-color: #ffffff;
             color: $nav-button-bg;
+            width: 70%;
         }
-
     }
 
 
