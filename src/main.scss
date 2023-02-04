@@ -13,6 +13,12 @@ COMPONENTS STYLES
 @use './components/Header/Header'; 
 @use './components/navbar/Navbar'; 
 
+/*==================
+PAGES STYLES 
+==================*/
+
+@use './pages/AboutMe';
+
 #root {
     display: grid;
     grid-template-columns: 2fr 10fr;
