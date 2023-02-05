@@ -16,7 +16,13 @@ const Hero = () => {
             defaultMessage="Hi, Im Dylan"
           />
         </h2>
-
+        <p className="hero__content--text">
+            <FormattedMessage
+            id="hero.content-text"
+            defaultMessage="Text not found" 
+            values={{'<br />': <br/>}}
+            />
+        </p>
       </div>
       <div className="hero__image">
         <p>hola mundo</p>
