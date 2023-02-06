@@ -1,18 +1,15 @@
 import React from "react";
 import { useContext } from "react";
 import LangContext from "../../context/LangContext";
+import { localStorageLang } from "../../context/LangContext";
 
 const LanguageSelector = () => {
-  const { changeLanguage } = useContext(LangContext);
-
-  const handleLanguageChange = (e) => {
-    changeLanguage(e.target.value);
-  };
+  const { handleLang } = useContext(LangContext);
 
   return (
-      <select onChange={handleLanguageChange} className="language__selector">
-        <option value="en-US">English</option>
-        <option value="es-CO">Spanish</option>
+      <select onChange={handleLang} className="language__selector" defaultValue={localStorageLang()}>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
       </select>
   );
 };

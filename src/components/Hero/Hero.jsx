@@ -1,28 +1,22 @@
-import React, {useContext} from "react";
-import LangContext from '../../context/LangContext'; 
-import { FormattedMessage } from "react-intl";
+import { useContext } from "react";
+import LangContext from '../../context/LangContext';
 
 
 const Hero = () => {
-  const { locale } = useContext(LangContext)
-  let typingClass = locale == 'es-CO' ? 'esTyping' : 'enTyping';  
+  const { translations, language } = useContext(LangContext)
+  let typingClass = language == 'es' ? 'esTyping' : 'enTyping';  
 
   return (
     <article className="hero">
       <div className="hero__content">
         <h2 className={`hero__content--name ${typingClass}`}>
-          <FormattedMessage
-            id="hero.content-name"
-            defaultMessage="Hi, Im Dylan"
-          />
+          {translations.hero.contentName}
         </h2>
-        <p className="hero__content--text">
-            <FormattedMessage
-            id="hero.content-text"
-            defaultMessage="Text not found" 
-            values={{'<br />': <br/>}}
-            />
-        </p>
+        { translations.hero.contentText.map((text, index) => (
+            <p key={index} className={`hero__content--text`}>
+              {text}
+            </p>
+        ))}
       </div>
       <div className="hero__image">
         <p>hola mundo</p>

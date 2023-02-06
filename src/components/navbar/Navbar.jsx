@@ -1,40 +1,26 @@
-import React from "react";
-import { FormattedMessage } from 'react-intl'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom';
-
+import LangContext from '../../context/LangContext';
 
 const Navbar = () => {
+  const { translations } = useContext(LangContext)
+
   return (
     <nav className="web__header__nav">
       <Link to="/aboutme" className="web__header__nav--item">
-        <FormattedMessage
-          id="header.nav.button-aboutme"
-          defaultMessage="About me"
-        />
+        {translations.header.nav.buttonAboutme}
       </Link>
       <Link to="/projects" className="web__header__nav--item">
-        <FormattedMessage
-          id="header.nav.button-projects"
-          defaultMessage="Projects"
-        />
+        {translations.header.nav.buttonProjects}
       </Link>
       <Link to="/skills" className="web__header__nav--item">
-        <FormattedMessage
-          id="header.nav.button-skills"
-          defaultMessage="Skills"
-        />
+        {translations.header.nav.buttonSkills}
       </Link>
       <Link to="/certifications" className="web__header__nav--item">
-        <FormattedMessage
-          id="header.nav.button-certifications"
-          defaultMessage="Certifications"
-        />
+        {translations.header.nav.buttonCertifications}
       </Link>
       <Link to="contactme" className="web__header__nav--item">
-        <FormattedMessage
-          id="header.nav.button-contactme"
-          defaultMessage="Contact me"
-        />
+        {translations.header.nav.buttonContactme}
       </Link>
     </nav>
   );

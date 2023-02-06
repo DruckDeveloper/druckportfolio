@@ -1,7 +1,5 @@
 import React from 'react'
 import Hero from '../components/Hero/Hero'
-import { FormattedMessage } from 'react-intl'
-
 
 const AboutMe = () => {
   return (

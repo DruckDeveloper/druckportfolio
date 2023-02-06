@@ -1,5 +1,30 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
+import {dictionary} from '../data/lang/dictionary.jsx'
 
-const LangContext = createContext({}); 
+const LangContext = createContext(); 
 
-export default LangContext; 
+export const localStorageLang = () => {
+  if (localStorage.getItem('lang')) {
+    return localStorage.getItem('lang')
+  } else {
+    return 'en'
+  }
+}
+
+const LangProvider = ({ children }) => {
+  const [language, setLanguage] = useState(localStorageLang())
+  const [translations, setTranslations] = useState(dictionary[localStorageLang()])
+
+  const handleLang = (e) => {
+    setLanguage(e.target.value)
+    setTranslations(dictionary[e.target.value])
+    localStorage.setItem('lang', e.target.value); 
+  }
+
+  const data = { translations, handleLang, language }
+
+  return <LangContext.Provider value={data}>{children}</LangContext.Provider>
+}
+
+export { LangProvider }
+export default LangContext
