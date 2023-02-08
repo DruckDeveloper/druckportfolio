@@ -1,7 +1,5 @@
-import React from "react";
-
 const Certifications = () => {
-  return <section className="certifications__section">Certifications</section>;
-};
+  return <section className='certifications__section'>Certifications</section>
+}
 
-export default Certifications;
+export default Certifications

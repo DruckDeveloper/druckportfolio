@@ -1,11 +1,11 @@
-import { createContext, useState } from "react";
-import {dictionary} from '../data/lang/dictionary.jsx'
+import { createContext, useState } from 'react'
+import { dictionary } from '../data/lang/dictionary.jsx'
 
-const LangContext = createContext(); 
+const LangContext = createContext()
 
 export const localStorageLang = () => {
-  if (localStorage.getItem('lang')) {
-    return localStorage.getItem('lang')
+  if (window.localStorage.getItem('lang')) {
+    return window.localStorage.getItem('lang')
   } else {
     return 'en'
   }
@@ -18,7 +18,7 @@ const LangProvider = ({ children }) => {
   const handleLang = (e) => {
     setLanguage(e.target.value)
     setTranslations(dictionary[e.target.value])
-    localStorage.setItem('lang', e.target.value); 
+    window.localStorage.setItem('lang', e.target.value)
   }
 
   const data = { translations, handleLang, language }

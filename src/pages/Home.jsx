@@ -1,4 +1,3 @@
-import React from 'react'
 import AboutMe from './AboutMe'
 import Projects from './Projects'
 import Skills from './Skills'
@@ -7,12 +6,12 @@ import ContactMe from './ContactMe'
 
 const Home = () => {
   return (
-    <>    
-        <AboutMe />
-        <Projects />
-        <Skills />
-        <Certifications />
-        <ContactMe />
+    <>
+      <AboutMe />
+      <Projects />
+      <Skills />
+      <Certifications />
+      <ContactMe />
     </>
   )
 }

@@ -1,6 +1,21 @@
 @import '../../styles/variables';
 @import '../../styles/mixins'; 
 
+.responsive__header {
+    display: none;
+    
+    @media (max-width: 768px) {
+        display: flex;
+        width: 100%;
+        background-color: $dark-bg-header;
+        justify-content: flex-end;
+
+        & .menu__button {
+            margin: 0 15px;
+        }
+    }
+}
+
 .web__header{
     @include flex-center-x(space-evenly, column);
     position: sticky;
@@ -11,8 +26,10 @@
     align-items: center;
     
     @media (max-width: 768px) {
+        display: none;
         position: relative;
     }
+
 
     & .language__selector{
         width: 30%;
@@ -21,6 +38,16 @@
         background-color: $dark-bg-header;
         border: none;      
 
+    }
+
+    & .menu__button {
+        display: none;
+
+        @media (max-width: 768px) {            
+            display: inline-block;
+            margin: 0 20px;
+            align-self: flex-end;
+        }
     }
 
     & .profile {
@@ -55,7 +82,6 @@
                 height: 150px; 
             }
         }
-        
     }
 
     &__nav{
@@ -79,9 +105,13 @@
             color: $nav-button-bg;
             width: 70%;
         }
+
+        @media (max-width: 768px) {
+            &--item {
+                padding: 6px 12px;
+            }
+        }
     }
-
-
 
     &__icons{
         @include flex-col; 
