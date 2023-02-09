@@ -6,7 +6,7 @@
 
 
 /*==================
-COMPONENTS STYLES 
+COMPONENTS IMPORTS 
 ==================*/
 
 @use './App'; 
@@ -14,11 +14,16 @@ COMPONENTS STYLES
 @use './components/navbar/Navbar'; 
 
 /*==================
-PAGES STYLES 
+PAGES IMPORTS 
 ==================*/
 
 @use './pages/AboutMe';
+@use './pages/ContactMe'; 
 
+
+/*==================
+LAYOUT STYLES 
+==================*/
 #root {
     display: grid;
     grid-template-columns: 2fr 10fr;

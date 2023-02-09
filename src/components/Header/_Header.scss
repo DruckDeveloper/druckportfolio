@@ -3,15 +3,16 @@
 
 .responsive__header {
     display: none;
-    
+
     @media (max-width: 768px) {
         display: flex;
-        width: 100%;
-        background-color: $dark-bg-header;
+        position: sticky;
+        width: 100vw;
+        background-color: $dark-bg-secundary;
         justify-content: flex-end;
 
         & .menu__button {
-            margin: 0 15px;
+            margin: 20px;
         }
     }
 }
@@ -21,7 +22,7 @@
     position: sticky;
     top: 0;
     height: 100vh;
-    background-color: $dark-bg-header;
+    background-color: $dark-bg-secundary;
     gap: 20px;
     align-items: center;
     
@@ -35,7 +36,7 @@
         width: 30%;
         font-size: 15px;
         color: #ffffff;
-        background-color: $dark-bg-header;
+        background-color: $dark-bg-secundary;
         border: none;      
 
     }

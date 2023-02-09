@@ -6,7 +6,7 @@ const ResponsiveHeader = () => {
       <BiMenu
         className='menu__button'
         color='#ffffff'
-        size='35px'
+        size='40px'
       />
     </header>
   )
