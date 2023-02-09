@@ -12,6 +12,7 @@ COMPONENTS IMPORTS
 @use './App'; 
 @use './components/Header/Header'; 
 @use './components/navbar/Navbar'; 
+@use './components/Header/ResponsiveHeader';
 
 /*==================
 PAGES IMPORTS 
@@ -28,6 +29,7 @@ LAYOUT STYLES
     display: grid;
     grid-template-columns: 2fr 10fr;
     min-height: 100vh;
+    position: relative;
 
 
     @media (max-width: 768px) {

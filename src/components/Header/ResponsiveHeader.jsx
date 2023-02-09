@@ -1,13 +1,9 @@
 import { BiMenu } from 'react-icons/bi'
 
-const ResponsiveHeader = () => {
+const ResponsiveHeader = ({ setOpenMenu, openMenu }) => {
   return (
     <header className='responsive__header'>
-      <BiMenu
-        className='menu__button'
-        color='#ffffff'
-        size='40px'
-      />
+      <BiMenu className='menu__button' size='3rem' color='#efe' onClick={() => setOpenMenu(!openMenu)} />
     </header>
   )
 }

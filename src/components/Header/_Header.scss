@@ -1,22 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/mixins'; 
 
-.responsive__header {
-    display: none;
-
-    @media (max-width: 768px) {
-        display: flex;
-        position: sticky;
-        width: 100vw;
-        background-color: $dark-bg-secundary;
-        justify-content: flex-end;
-
-        & .menu__button {
-            margin: 20px;
-        }
-    }
-}
-
 .web__header{
     @include flex-center-x(space-evenly, column);
     position: sticky;
@@ -25,10 +9,12 @@
     background-color: $dark-bg-secundary;
     gap: 20px;
     align-items: center;
-    
+    transition: transform .4s ease;
+
     @media (max-width: 768px) {
-        display: none;
-        position: relative;
+        position: absolute;
+        transform: translateY(-100%);
+        width: 100%;
     }
 
 
@@ -39,16 +25,6 @@
         background-color: $dark-bg-secundary;
         border: none;      
 
-    }
-
-    & .menu__button {
-        display: none;
-
-        @media (max-width: 768px) {            
-            display: inline-block;
-            margin: 0 20px;
-            align-self: flex-end;
-        }
     }
 
     & .profile {

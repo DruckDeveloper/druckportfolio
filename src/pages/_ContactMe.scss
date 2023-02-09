@@ -15,14 +15,15 @@
 
         @media (min-width: 768px) {
             & {
-                padding: 15px
+                padding: 15px; 
+                height: 100%
             }
         }
         
         & .contactme__form {
             @include flex-col();
             width: 100%;
-            height: 100%; 
+            height: auto;
             background-color: $dark-bg-secundary;
             padding: 40px;
             border-radius: 10px;

@@ -1,0 +1,29 @@
+@use '../../styles/variables' as *;
+
+.responsive__header {
+    display: none;
+    @media (max-width: 768px) {
+        display: flex;
+        position: sticky;
+        top: 0;
+        width: 100vw;
+        background-color: $dark-bg-secundary;
+        justify-content: flex-end;
+    }
+}
+
+.menu__button {
+    display: none;
+
+    @media (max-width: 768px) {        
+        top: 5px;    
+        display: inline-block;
+        position: absolute;
+        margin: 0 20px;
+        align-self: flex-end;
+    }
+}
+
+.open {
+    transform: translateY(0);
+}

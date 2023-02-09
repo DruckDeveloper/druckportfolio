@@ -3,13 +3,16 @@ import Header from './components/Header/Header'
 import ResponsiveHeader from './components/Header/ResponsiveHeader'
 import { BrowserRouter } from 'react-router-dom'
 import { LangProvider } from './context/LangContext'
+import { useState } from 'react'
 
 const App = () => {
+  const [openMenu, setOpenMenu] = useState(false)
+
   return (
     <LangProvider>
       <BrowserRouter>
-        <ResponsiveHeader />
-        <Header />
+        <ResponsiveHeader setOpenMenu={setOpenMenu} openMenu={openMenu} />
+        <Header setOpenMenu={setOpenMenu} openMenu={openMenu} />
         <main className='web__main'>
           <WebRoutes />
         </main>
