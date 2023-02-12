@@ -1,0 +1,30 @@
+@import '../styles/mixins';
+@import '../styles/variables'; 
+
+.projects__section{
+    @include flex-center-xy(column, center, center); 
+    width: 100%;
+
+    &--title {
+        font-size: 3.2rem;
+        font-weight: bold;
+        color: $primary-color;
+        padding: 1rem 0;
+    }
+
+    &--container {
+        width: 90%;
+        height: 80%;
+        @include flex-center-x(center, row); 
+        flex-wrap: wrap;
+        gap: 2%;
+
+        & .project__card {
+            width: 30%;
+            height: 30%;
+            aspect-ratio: 16/9;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

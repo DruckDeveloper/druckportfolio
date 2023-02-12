@@ -1,3 +1,6 @@
+// importing images
+import toDoList from '../../assets/images/to-do-list.webp'
+
 export const dictionary = {
   en: {
     // Header Content
@@ -27,6 +30,22 @@ export const dictionary = {
         downloadButotn: 'Descargar CV',
         contactButton: 'Work with Me'
       }
+    },
+
+    // Projects page
+    projects: {
+      title: 'My projects',
+      card: [
+        {
+          title: 'Legacy todo list',
+          repo: 'https://github.com/CamilaForer/Legacy-to-do-list',
+          repoButton: 'Repository',
+          deploy: 'https://legacy-to-do-list-o115.vercel.app/',
+          deployButton: 'Deploy',
+          image: toDoList,
+          description: ['ToDo list Application with stack MERN']
+        }
+      ]
     },
 
     // ContactMe Page
@@ -68,6 +87,40 @@ export const dictionary = {
         downloadButotn: 'Download CV',
         contactButton: 'Trabaja conmigo'
       }
+    },
+
+    // Projects page
+    projects: {
+      title: 'Mis proyectos',
+      card: [
+        {
+          title: 'Legacy todo list',
+          repo: 'https://github.com/CamilaForer/Legacy-to-do-list',
+          repoButton: 'Repositorio',
+          deploy: 'https://legacy-to-do-list-o115.vercel.app/',
+          deployButton: 'Despliegue',
+          image: toDoList,
+          description: ['Aplicacíon de tareas por hacer desarrollada con el stack MERN']
+        },
+        {
+          title: 'Legacy todo list',
+          repo: 'https://github.com/CamilaForer/Legacy-to-do-list',
+          repoButton: 'Repositorio',
+          deploy: 'https://legacy-to-do-list-o115.vercel.app/',
+          deployButton: 'Despliegue',
+          image: toDoList,
+          description: ['Aplicacíon de tareas por hacer desarrollada con el stack MERN']
+        },
+        {
+          title: 'Legacy todo list',
+          repo: 'https://github.com/CamilaForer/Legacy-to-do-list',
+          repoButton: 'Repositorio',
+          deploy: 'https://legacy-to-do-list-o115.vercel.app/',
+          deployButton: 'Despliegue',
+          image: toDoList,
+          description: ['Aplicacíon de tareas por hacer desarrollada con el stack MERN']
+        }
+      ]
     },
 
     // ContactMe Page
