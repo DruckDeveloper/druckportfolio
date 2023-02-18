@@ -1,3 +1,6 @@
+// Import skills Icons
+import { SkillsInfo } from '../info/SkillsInfo'
+
 // importing images
 import toDoList from '../../assets/images/to-do-list.webp'
 
@@ -43,6 +46,12 @@ export const dictionary = {
           deploy: 'https://legacy-to-do-list-o115.vercel.app/',
           deployButton: 'Deploy',
           image: toDoList,
+          tech: [
+            SkillsInfo.front.react,
+            SkillsInfo.back.mongodb,
+            SkillsInfo.back.nodejs,
+            SkillsInfo.back.express
+          ],
           description: ['ToDo list Application with stack MERN']
         }
       ]

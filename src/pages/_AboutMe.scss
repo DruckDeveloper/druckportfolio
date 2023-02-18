@@ -39,6 +39,7 @@
         animation: typing 2s steps(13), blink 0.5s infinite step-end alternate;
         overflow: hidden;
       }
+
       & .enTyping {
         width: 10ch;
         animation: typing 2s steps(10), blink 0.5s infinite step-end alternate;
@@ -50,6 +51,7 @@
           width: 0;
         }
       }
+
       @keyframes blink {
         50% {
           border-color: transparent;
@@ -77,18 +79,23 @@
             color: #ffffff;
             border: 1px solid #ffffff;
           }
+
           &.downloadCvBtn {
             background-color: transparent;
             color: #ffffff;
-            border: 1px solid #000000;
+            border: 1px solid #ffffff;
           }
         }
+
+        & button {
+          transition: 0.5s;
+        }
+
         & button:hover {
           position: relative;
           cursor: pointer;
           transition: 0.5s;
-          transform: scale(1.2) perspective(1000px) rotateX(10deg)
-            rotateY(10deg);
+          transform: scale(1.2) perspective(1000px) rotateX(10deg) rotateY(10deg);
           box-shadow: 8px 8px 12px -1px #777;
         }
       }
@@ -109,11 +116,13 @@
           width: 80%;
         }
       }
+
       @keyframes entrada {
         0% {
           opacity: 0;
           transform: scale(0.1);
         }
+
         100% {
           opacity: 1;
           transform: scale(1);
