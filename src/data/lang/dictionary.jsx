@@ -1,8 +1,12 @@
 // Import skills Icons
 import { SkillsInfo } from '../info/SkillsInfo'
 
-// importing images
+// importing project images
 import toDoList from '../../assets/images/to-do-list.webp'
+import delHatoAlPlato from '../../assets/images/delhatoalplato.webp'
+import cryproDashboard from '../../assets/images/crypto-dashboard.webp'
+import tetrisGame from '../../assets/images/tetris.webp'
+import deezerClon from '../../assets/images/deezer-clon.webp'
 
 export const dictionary = {
   en: {
@@ -46,13 +50,84 @@ export const dictionary = {
           deploy: 'https://legacy-to-do-list-o115.vercel.app/',
           deployButton: 'Deploy',
           image: toDoList,
+          description: ['ToDo list Application with stack MERN'],
           tech: [
             SkillsInfo.front.react,
             SkillsInfo.back.mongodb,
             SkillsInfo.back.nodejs,
             SkillsInfo.back.express
-          ],
-          description: ['ToDo list Application with stack MERN']
+          ]
+        },
+        {
+          title: 'Del hato al plato Ecomerce',
+          repoButton: 'Repository',
+          repo: 'https://github.com/DruckDeveloper/delhatoalplato',
+          deployButton: 'Deploy',
+          deploy: 'https://delhatoalplato.vercel.app/',
+          description: [''],
+          image: delHatoAlPlato,
+          tech: [
+            SkillsInfo.front.react,
+            SkillsInfo.front.html,
+            SkillsInfo.front.tailwindcss,
+            SkillsInfo.front.js
+          ]
+        },
+        {
+          title: 'Cryptocurrencies Dashboard with congeko API',
+          repoButton: 'Repository',
+          repo: 'https://github.com/ElPardo16/DashboardCriptos/tree/druck_dev',
+          deployButton: 'Deploy',
+          deploy: 'https://cryptodashboard-with-react.vercel.app/',
+          description: [''],
+          image: cryproDashboard,
+          tech: [
+            SkillsInfo.front.react,
+            SkillsInfo.front.js,
+            SkillsInfo.back.api
+          ]
+        },
+        {
+          title: 'Responsive Tetris game with js',
+          repoButton: 'Repository',
+          repo: 'https://github.com/DruckDeveloper/tetris-with-js',
+          deployButton: 'Deploy',
+          deploy: 'https://tetris-with-js.vercel.app/',
+          description: [''],
+          image: tetrisGame,
+          tech: [
+            SkillsInfo.front.html,
+            SkillsInfo.front.css,
+            SkillsInfo.front.js
+          ]
+        },
+        {
+          title: 'Deezer dark mode clone',
+          repoButton: 'Repository',
+          repo: 'https://github.com/DruckDeveloper/deezer-dark-clone/tree/dylan_section',
+          deployButton: 'Deploy',
+          deploy: 'https://deezer-dark-clone.vercel.app/',
+          description: [''],
+          image: deezerClon,
+          tech: [
+            SkillsInfo.front.html,
+            SkillsInfo.front.css
+          ]
+        },
+        {
+          title: '',
+          repoButton: 'Repository',
+          repo: '',
+          deployButton: 'Deploy',
+          deploy: '',
+          description: [''],
+          image: '',
+          tech: [
+            SkillsInfo.front.react,
+            SkillsInfo.front.html,
+            SkillsInfo.front.css,
+            SkillsInfo.front.js
+          ]
         }
       ]
     },
@@ -65,7 +140,8 @@ export const dictionary = {
         subjectField: 'Subject',
         messageField: 'Message'
       },
-      sendButtonText: 'Send'
+      sendButtonText: 'Send',
+      sendedButtonText: 'Message sended successfully'
     }
   },
   es: {
@@ -140,7 +216,8 @@ export const dictionary = {
         subjectField: 'Asunto',
         messageField: 'Mensaje'
       },
-      sendButtonText: 'Enviar'
+      sendButtonText: 'Enviar',
+      sendedButtonText: 'Mensaje enviado con exito'
     }
   }
 }

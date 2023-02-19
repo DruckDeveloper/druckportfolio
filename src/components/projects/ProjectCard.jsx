@@ -4,12 +4,11 @@ import { FaRocket } from 'react-icons/fa'
 const ProjectCard = ({ title, repo, repoButton, deploy, deployButton, image, tech }) => {
   const backgroundImage = { backgroundImage: `url(${image})` }
 
-  console.log(tech)
   return (
     <div className='project__card' style={backgroundImage}>
       <div className='project__card--content'>
         <h3 className='project__card--content-title'>{title}</h3>
-        <div className='skills__container'>
+        <div className='project__card--content-skills'>
           {tech?.map((item) => item)}
         </div>
         <div className='project__card--content-buttons'>

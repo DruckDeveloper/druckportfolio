@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import LangContext from '../../context/LangContext'
 import { GrDownload } from 'react-icons/gr'
+import heroImage from '../../assets/images/hero-image.svg'
+
 const Hero = () => {
   const { translations, language } = useContext(LangContext)
 
@@ -37,7 +39,9 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className='hero__image' />
+      <div className='hero__image'>
+        <img src={heroImage} alt='about me image' />
+      </div>
     </article>
   )
 }

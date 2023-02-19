@@ -7,7 +7,7 @@
   & .hero {
     display: flex;
     gap: 2%;
-    height: 60%;
+    height: 70%;
     width: 80%;
 
     @media (max-width: 768px) {
@@ -18,7 +18,7 @@
 
     &__content {
       display: inline-block;
-      height: 60%;
+      height: 55%;
 
       &--name {
         display: block;
@@ -103,7 +103,11 @@
 
     &__image {
       display: inline-block;
-      width: 40%;
+      width: 45%;
+
+      & img {
+        width: 100%;
+      }
 
       &--animation {
         width: 100%;
