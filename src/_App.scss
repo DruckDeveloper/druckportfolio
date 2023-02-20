@@ -1,9 +1,15 @@
-@import './styles/variables'; 
+@import './styles/variables';
 
-.web__main{
-    & > section {
+.web__main {
+    &>section {
+        &>h2 {
+            font-size: 3rem;
+            text-align: center;
+            color: $primary-color;
+        }
+
         height: 100vh;
-        background-color:  $dark-bg-primary; 
+        background-color: $dark-bg-primary;
         color: #ffffff;
     }
 }

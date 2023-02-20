@@ -68,7 +68,7 @@
         gap: 1rem;
         padding: 2rem 0;
 
-        & button {
+        & a {
           margin: 0 10px;
           height: 100%;
           padding: 12px 24px;
@@ -87,11 +87,11 @@
           }
         }
 
-        & button {
+        & a {
           transition: 0.5s;
         }
 
-        & button:hover {
+        & a:hover {
           position: relative;
           cursor: pointer;
           transition: 0.5s;

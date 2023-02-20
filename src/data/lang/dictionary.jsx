@@ -8,6 +8,10 @@ import cryproDashboard from '../../assets/images/crypto-dashboard.webp'
 import tetrisGame from '../../assets/images/tetris.webp'
 import deezerClon from '../../assets/images/deezer-clon.webp'
 
+// Import certifications images
+import cloudPractitioner from '../../assets/certs/aws-cloud-practitioner.png'
+import reStart from '../../assets/certs/aws-re-start.png'
+
 export const dictionary = {
   en: {
     // Header Content
@@ -130,6 +134,27 @@ export const dictionary = {
           ]
         }
       ]
+    },
+
+    // Certifications page
+    certifications: {
+      title: 'My certifications',
+      certs: [
+        {
+          title: 'AWS Cloud',
+          image: cloudPractitioner,
+          link: 'https://www.credly.com/badges/3358a034-8353-48e2-b113-b86d4e7a8086/public_url',
+          button: 'Learn more'
+        },
+        {
+          title: 'AWS Re/Start Graduate',
+          image: reStart,
+          link: 'https://www.credly.com/badges/5f8d5fc4-a6a0-4de5-a3bb-861e1d020af4/public_url',
+          button: 'Learn more'
+        }
+      ],
+      seeAll: 'See all',
+      badges: 'https://www.credly.com/earner/earned'
     },
 
     // ContactMe Page

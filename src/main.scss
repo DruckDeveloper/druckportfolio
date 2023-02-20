@@ -1,7 +1,7 @@
 //import styles reset 
-@use './styles/reset'; 
+@use './styles/reset';
 //Import styles functions
-@use './styles/mixins'; 
+@use './styles/mixins';
 
 
 
@@ -9,9 +9,9 @@
 COMPONENTS IMPORTS 
 ==================*/
 
-@use './App'; 
-@use './components/Header/Header'; 
-@use './components/navbar/Navbar'; 
+@use './App';
+@use './components/Header/Header';
+@use './components/navbar/Navbar';
 @use './components/Header/ResponsiveHeader';
 
 /*==================
@@ -19,9 +19,9 @@ PAGES IMPORTS
 ==================*/
 
 @use './pages/AboutMe';
-@use './pages/ContactMe'; 
-@use './pages/Projects'; 
-
+@use './pages/ContactMe';
+@use './pages/Projects';
+@use './pages/Certifications';
 
 /*==================
 LAYOUT STYLES 

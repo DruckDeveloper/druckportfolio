@@ -2,19 +2,12 @@ import { useContext } from 'react'
 import LangContext from '../../context/LangContext'
 import { GrDownload } from 'react-icons/gr'
 import heroImage from '../../assets/images/hero-image.svg'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const { translations, language } = useContext(LangContext)
 
   const typingClass = language === 'es' ? 'esTyping' : 'enTyping'
-  const handleDownload = () => {
-    const link = document.createElement('a')
-    link.href = '/public/dylan-ramirez-cv.pdf'
-    link.download = 'Dylan_Ramirez-CV.pdf'
-    document.body.appendChild(link)
-    link.click()
-    link.remove()
-  }
 
   return (
     <article className='hero'>
@@ -28,15 +21,15 @@ const Hero = () => {
           </p>
         ))}
         <div className='hero__content--buttons'>
-          <button className='contactBtn'>
+          <Link to='/contactme' className='contactBtn'>
             {translations.hero.buttons.contactButton}
-          </button>
-          <button onClick={handleDownload} className='downloadCvBtn'>
+          </Link>
+          <a href='/public/dylan-ramirez-cv.pdf' download className='downloadCvBtn'>
             {translations.hero.buttons.downloadButotn}
             <GrDownload
               color='#ffffff'
             />
-          </button>
+          </a>
         </div>
       </div>
       <div className='hero__image'>
